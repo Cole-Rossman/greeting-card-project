@@ -8,14 +8,44 @@
     <!-- import css: -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Your App</title>
+    <title>Watch Personalization</title>
 </head>
 
 <body>
-    Implement you app here, <a href="demo.html">See the demo</a>
-
-
-
+    <h1>Watch Personalization</h1>
+    <div id="container">
+        <section id="inputs">
+            <label for="name-input">Watch Owner</label>
+            <input id="name-input" value="Cole Rossman">
+            <label for="watch-select">Choose Watch</label>
+            <select id="watch-select">
+                <option value="assets/daytona.jpeg">Rolex Daytona</option>
+                <option value="assets/nautilus.jpeg">Patek Philippe Nautilus</option>
+                <option value="assets/royaloak.jpeg">AP Royal Oak</option>
+                <option value="assets/santos.jpeg">Cartier Santos</option>
+                <option value="assets/submariner.jpeg">Rolex Submariner</option>
+            </select>
+            <label for="watch-description-textarea">Watch Description</label>
+            <textarea id="watch-description-textarea"></textarea>
+            <label for="background-select">Background</label>
+            <select id="background-select">
+                <option value="space-gray">Space Gray</option>
+                <option value="metal">Metal</option>
+                <option value="dark-rock">Dark Rock</option>
+                <option value="deep-ocean">Deep Ocean</option>
+                <option value="sky-gray">Sky Gray</option>
+            </select>
+            <button id="your-watch">Your Watch</button>
+        </section>
+        <article id="watch" class="space-gray">
+            <h2 id="name-header">Your Timepiece</h2>
+            <img id="watch-image" src="assets/daytona.jpeg">
+            <p id="description-display">
+                Choose Wisely
+            </p> 
+        </article>       
+    </article>
+    </div>
 
     <script src="app.js" type="module"></script>
 </body>

@@ -1,11 +1,106 @@
-/* font @import */
-
 :root {
-  /* css variables with theme colors,
-    names have to start with "--" */
-  --color-1: #b9af9e;
+  --background: #8AC7DB;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-    
+  background: var(--background);
+  padding: 10px;
+}
+
+#container {
+  display: grid;
+  justify-items: center;
+}
+@media (min-width: 600px) {
+  #container {
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 30px;
+  }
+}
+
+#inputs {
+  width: 100%;
+  max-width: 400px;
+}
+
+label, input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+input, select {
+  height: 30px;
+  font-size: 1rem;
+}
+#character {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+#character h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.75em;
+}
+
+#character p {
+  margin: 20px 0 0 0;
+  font-size: .9em;
+}
+
+.space-gray {
+  background: #615F5E;
+  border: #29292D;
+  font-family: 'Oswald';
+  font-size: 1.3rem;
+}
+
+.metal {
+  background: #C9C9C8;
+  border: #29292D;
+  font-family: 'Oswald';
+  font-size: 1.4rem;
+}
+
+.dark-rock {
+  background: #6C6C64;
+  border: #29292D;
+  font-family: 'Oswald';
+  font-size: 1.0rem;
+}
+
+.deep-ocean {
+  background: #262D3D;
+  border: #29292D;
+  font-family: 'Oswald';
+  font-size: 1.0rem;
+}
+
+.sky-gray {
+  background: #E6E5E2;
+  border: #29292D;
+  font-family: 'Oswald';
+  font-size: 1.0rem;
+}
+
+#watch-image {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
 }
