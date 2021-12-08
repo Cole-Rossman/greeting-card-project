@@ -104,3 +104,7 @@ input, select {
   height: 300px;
   object-fit: cover;
 }
+
+#watch {
+  text-align: center;
+}
