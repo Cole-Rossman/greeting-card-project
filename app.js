@@ -1,5 +1,5 @@
 const nameInput = document.getElementById('name-input');
-const nameDisplay = document.getElementById('name-header');
+const nameHeader = document.getElementById('name-header');
     nameInput.addEventListener('input', () => {
         nameHeader.textContent = nameInput.value;
 });
